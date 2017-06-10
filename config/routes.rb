@@ -6,4 +6,6 @@ Rails.application.routes.draw do
       resources :reservations, :ony => [:show, :create, :update, :destroy]
     end
   end
+
+  root "welcome#index"
 end
