@@ -5,6 +5,6 @@ class Api::V1::TrainsController < ApiController
   end
 
   def show
-    @train = Train.find_by_number!( params[:train_number] )
+    @train = Train.find_by_number!( params[:id] )
   end
 end
